@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TempViewController : UIViewController
+@interface TempViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, weak) IBOutlet UITextField *fahrenheitTextField;
+@property (nonatomic, weak) IBOutlet UITextField *celciusTextField;
+@property (nonatomic, weak) IBOutlet UIButton *convertButton;
+
 
 @end

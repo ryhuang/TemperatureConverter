@@ -19,6 +19,8 @@
 		9F477A7D180287AB00FAB877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F477A65180287AB00FAB877 /* UIKit.framework */; };
 		9F477A85180287AB00FAB877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F477A83180287AB00FAB877 /* InfoPlist.strings */; };
 		9F477A87180287AB00FAB877 /* TemperatureConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F477A86180287AB00FAB877 /* TemperatureConversionTests.m */; };
+		9F477A98180288DA00FAB877 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F477A96180288DA00FAB877 /* TempViewController.m */; };
+		9F477A99180288DA00FAB877 /* TempViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F477A97180288DA00FAB877 /* TempViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		9F477A82180287AB00FAB877 /* TemperatureConversionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TemperatureConversionTests-Info.plist"; sourceTree = "<group>"; };
 		9F477A84180287AB00FAB877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F477A86180287AB00FAB877 /* TemperatureConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemperatureConversionTests.m; sourceTree = "<group>"; };
+		9F477A95180288DA00FAB877 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
+		9F477A96180288DA00FAB877 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
+		9F477A97180288DA00FAB877 /* TempViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				9F477A71180287AB00FAB877 /* AppDelegate.m */,
 				9F477A73180287AB00FAB877 /* Images.xcassets */,
 				9F477A68180287AB00FAB877 /* Supporting Files */,
+				9F477A95180288DA00FAB877 /* TempViewController.h */,
+				9F477A96180288DA00FAB877 /* TempViewController.m */,
+				9F477A97180288DA00FAB877 /* TempViewController.xib */,
 			);
 			path = TemperatureConversion;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F477A99180288DA00FAB877 /* TempViewController.xib in Resources */,
 				9F477A6C180287AB00FAB877 /* InfoPlist.strings in Resources */,
 				9F477A74180287AB00FAB877 /* Images.xcassets in Resources */,
 			);
@@ -241,6 +250,7 @@
 			files = (
 				9F477A72180287AB00FAB877 /* AppDelegate.m in Sources */,
 				9F477A6E180287AB00FAB877 /* main.m in Sources */,
+				9F477A98180288DA00FAB877 /* TempViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,11 +367,13 @@
 		9F477A8B180287AB00FAB877 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TemperatureConversion/TemperatureConversion-Prefix.pch";
 				INFOPLIST_FILE = "TemperatureConversion/TemperatureConversion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,11 +382,13 @@
 		9F477A8C180287AB00FAB877 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TemperatureConversion/TemperatureConversion-Prefix.pch";
 				INFOPLIST_FILE = "TemperatureConversion/TemperatureConversion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
